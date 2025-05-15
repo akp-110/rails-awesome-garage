@@ -7,11 +7,13 @@
 #   ['Action', 'Comedy', 'Drama', 'Horror'].each do |genre_|
 #     MovieGenre.find_or_create_by!(: genre_)
 #   end
-puts 'Seeding data......'
+puts 'Cleaning the DB......'
 
 Car.destroy_all
 Review.destroy_all
 Owner.destroy_all
+
+puts 'Creating owners......'
 
 owner1 = Owner.create!(nickname: 'Jean Philippe-Mateta ')
 owner2 = Owner.create!(nickname: 'Pep Guardiola')
@@ -19,10 +21,12 @@ owner3 = Owner.create!(nickname: 'Erling Haaland')
 owner4 = Owner.create!(nickname: 'Adam Wharton')
 owner5 = Owner.create!(nickname: 'Kevin de Bruyne')
 
+puts 'Creating cars data......'
+
 Car.create!(
   brand: 'Porsche',
   model: '911 GT3 RS 992',
-  year: '2023',
+  year: 2023,
   fuel: 'Unleaded petrol',
   owner: owner1
 )
@@ -38,7 +42,7 @@ Car.create!(
 Car.create!(
   brand: 'Volkswagen',
   model: 'Golf GTI',
-  year: '2024',
+  year: 2024,
   fuel: 'Unleaded petrol',
   owner: owner3
 )
@@ -46,7 +50,7 @@ Car.create!(
 Car.create!(
   brand: 'Bugatti',
   model: 'Chiron',
-  year: '2016',
+  year: 2016,
   fuel: 'Unleaded petrol',
   owner: owner4
 )
@@ -54,7 +58,7 @@ Car.create!(
 Car.create!(
   brand: 'Lamborghini',
   model: 'SV Roadster',
-  year: '2017',
+  year: 2017,
   fuel: 'Unleaded petrol',
   owner: owner5
 )
