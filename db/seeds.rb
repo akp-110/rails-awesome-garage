@@ -13,7 +13,7 @@ Car.destroy_all
 Review.destroy_all
 Owner.destroy_all
 
-owner1 = Owner.create!(nickname: 'Jean Phillpe-Mateta ')
+owner1 = Owner.create!(nickname: 'Jean Philippe-Mateta ')
 owner2 = Owner.create!(nickname: 'Pep Guardiola')
 owner3 = Owner.create!(nickname: 'Erling Haaland')
 owner4 = Owner.create!(nickname: 'Adam Wharton')
