@@ -3,7 +3,8 @@
 <% @cars.each do |car| %>
 <h2><%= car.brand %></h2>
 <h3><%= car.model %></h3>
-<p><%= car.created_at.strftime('%b %e, %l:%M %p') %></p>
-<p><%= car.owner.nickname %></p>
+<p><strong>Created at: </strong><em><%= car.created_at.strftime('%b %e, %l:%M %p') %></em></p>
+<p><strong>Owner: </strong><%= car.owner.nickname %></p>
+<%= link_to "Car details", car_path(car) %>
 <hr>
 <% end %>
