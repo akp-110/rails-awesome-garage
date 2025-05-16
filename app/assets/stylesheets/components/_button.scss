@@ -1,6 +1,21 @@
-.btn-flat {
-  color: rgb(255, 255, 255);
+  .button-container {
+  display: flex;
+  justify-content: center;  // horizontally center
+  align-items: center;      // vertically center (optional)
+  height: 100px;  // set height if you want vertical centering
+
+    .btn-flat {
+  align-content: center;
+  color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #14410e;
+  background: #670BFF;
+  transition: 0.3s ease;
 }
+
+.btn-flat:hover {
+  background: #4D04C4;
+  color: white;
+}
+
+  }
